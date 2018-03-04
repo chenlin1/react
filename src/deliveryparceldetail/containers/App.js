@@ -73,7 +73,9 @@ class UserForm extends Component {
                 if (response.status == 200) {
 
                     const {
-                        platformOrderNumber
+                        platformOrderNumber,yksOrderNumber,warehouseOrderNumber,name,logisticsBusiness,logisticsNumber,waybillNumber,
+                        currencyName,countryAbb,trialFreight,paymentTime,currency,distribution,account,maihome,orderSum,isProfit,profit,
+                        warehouseOrderState,buyMessage,remark
                     } = response.data.data.basicinnfo;
 
                     // const {
@@ -95,14 +97,27 @@ class UserForm extends Component {
                     // const newtimePayment = timePayment ? moment(timestampFromat(timePayment)) : '';
 
                     this.props.form.setFieldsValue({
-                        platformOrderNumber
-                        // yksOrderNumber,
-                        // warehouseOrderNumber,
-                        // name,
-                        // logisticsBusiness,
-                        // logisticsNumber,
-                        // waybillNumber,
-                        // buyerEmail,
+                        platformOrderNumber,
+                        yksOrderNumber,
+                        warehouseOrderNumber,
+                        name,
+                        logisticsBusiness,
+                        logisticsNumber,
+                        waybillNumber,
+                        currencyName,
+                        countryAbb,
+                        trialFreight,
+                        paymentTime,
+                        currency,
+                        distribution,
+                        account,
+                        maihome,
+                        orderSum,
+                        isProfit,
+                        profit,
+                        warehouseOrderState,
+                        buyMessage,
+                        remark
                         // orderState,
                         // orderType,
                         // platformName,

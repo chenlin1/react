@@ -92,7 +92,7 @@ class Tablelist extends Component {
             dataIndex: 'Operation',
             render: (text, record, index) => {
                 const url = `/negativeprofitauditdetail/?orderId=${record.orderId}`
-                return (<div><p style={{textAlign:'center'}}><a onClick={this.openModalhandle} style={{width:'65px',display:'block'}}>审核/撤销</a></p>
+                return (<div><p style={{textAlign:'center'}}><a onClick={this.openModalhandle} style={{width:'65px',display:'block',margin:'0 auto'}}>审核/撤销</a></p>
                     <p style={{textAlign:'center'}}><Link to={url}>查看</Link></p>
                 </div>)
             },

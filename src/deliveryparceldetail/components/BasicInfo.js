@@ -201,7 +201,7 @@ class BasicInfo extends React.Component {
                             <FormItem
                                 label="币种"  {...this.formItemLayout3} style={{"width": "100%"}}
                             >
-                                {getFieldDecorator('currencyName', {
+                                {getFieldDecorator('currency', {
                                     rules: [{required: false, message: '请输入币种'}],
                                 })(
                                     <Input placeholder="请输入币种" id="success" maxLength="100"/>
@@ -300,7 +300,7 @@ class BasicInfo extends React.Component {
                             <FormItem
                                 label="买家留言"  {...this.formItemLayout3} style={{"width": "100%"}}
                             >
-                                {getFieldDecorator(' buyerMessage', {
+                                {getFieldDecorator('buyMessage', {
                                     rules: [{required: false, message: '请输入买家留言'}],
                                 })(
                                     <Input placeholder="请输入买家留言" id="success" maxLength="100"/>
@@ -314,7 +314,7 @@ class BasicInfo extends React.Component {
                             <FormItem
                                 label="备注"  {...this.formItemLayout3} style={{"width": "100%"}}
                             >
-                                {getFieldDecorator('remarks', {
+                                {getFieldDecorator('remark', {
                                     rules: [{required: false, message: '请输入备注'}],
                                 })(
                                     <Input placeholder="请输入备注" id="success" maxLength="100"/>
